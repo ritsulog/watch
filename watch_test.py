@@ -17,8 +17,14 @@ class Application(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        frame = tk.Frame(self, bg="white", width=8*X_DIVIDE_block, height=2*Y_DIVIDE_block, bd=0, relief="flat")
-        frame.pack()
+        watch_frame = tk.Frame(self, bg="white", width=8*X_DIVIDE_block, height=2*Y_DIVIDE_block, bd=0, relief="flat")
+        watch_frame.pack()
+
+        weather_frame = tk.Frame(self, bg="blue", width=8*X_DIVIDE_block, height=Y_DIVIDE_block, bd=0, relief="flat")
+        weather_frame.pack()
+
+        temp_frame = tk.Frame(self, bg="red", width=2*X_DIVIDE_block, height=Y_DIVIDE_block, bd=0, relief="flat")
+        temp_frame.pack()
 
     def callBack(self):
         pass
